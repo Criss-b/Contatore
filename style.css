@@ -1,0 +1,64 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #5215b4;
+    font-family: 'Staatliches', cursive;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.titolo {
+    color: white;
+    font-size: 60px;
+}
+.container-para {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.para {
+    color: white;
+    font-size: 100px;
+}
+.container-bottoni {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+}
+#piu {
+    margin-right: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 20px;
+}
+#meno {
+    margin-left: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 20px; 
+}
+#piu:hover,
+#meno:hover {
+    box-shadow: 1.5px 1.5px rgba(255, 255, 255, 0.534);
+}
+.container-reset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+#reset {
+    color: white;
+    font-size: 25px;
+}
+#reset:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
