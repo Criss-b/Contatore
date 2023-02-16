@@ -62,7 +62,6 @@ function decrementa(){
 
 }
 
-document.addEventListener("click", confermaReset());
 function confermaReset() {
     var resp = window.confirm("Confermare reset?");
         if(resp){
