@@ -33,7 +33,7 @@ containerReset.className = "container-reset";
 let azzera = document.createElement("p");
 containerReset.appendChild(azzera);
 azzera.setAttribute("id", "reset");
-azzera.setAttribute("onclick", "reset()");
+azzera.setAttribute("onclick", "confermaReset()");
 azzera.textContent = "RESET";
 
 
@@ -62,7 +62,10 @@ function decrementa(){
 
 }
 
-document.addEventListener("click", reset());
-function reset() {
-    conteggio = 0;
+document.addEventListener("click", confermaReset());
+function confermaReset() {
+    var resp = window.confirm("Confermare reset?");
+        if(resp){
+         return conteggio = 0;
+        }
 }
